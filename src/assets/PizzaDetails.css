@@ -1,0 +1,228 @@
+/* PizzaDetails.css */
+.details-container {
+	max-width: 600px;
+	margin: 50px auto;
+	margin-bottom: 100px;
+	padding: 20px;
+	background-color: rgb(230, 230, 228);
+	border: 1px solid #929090;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	text-align: center;
+}
+
+.details-container h2 {
+	font-size: 2em;
+	margin: 10px;
+	text-transform: capitalize;
+
+	color: #000000;
+}
+
+.details-container img {
+	width: 100%;
+	max-height: 200px;
+	object-fit: cover;
+	border-radius: 8px;
+	margin-bottom: 20px;
+}
+
+.details-container p {
+	font-size: 1rem;
+	margin-bottom: 5px;
+
+	color: #000000;
+}
+
+.details-container ul {
+	list-style-type: none;
+
+	width: 200px;
+	margin: auto;
+}
+
+.details-container li {
+	text-decoration: dotted;
+	color: #050505;
+}
+
+.desc-container {
+	justify-content: space-around;
+}
+.ingredients-container {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+}
+
+.ingredients-container button {
+	cursor: pointer;
+	padding: 10px;
+	background-color: #aba7a4;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	margin-bottom: 10px;
+	width: 200px;
+}
+.ingredients-container button:hover {
+	background-color: rgb(76, 74, 74);
+}
+.ingredients-container ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	top: 100%;
+	left: 64%;
+
+	display: none;
+	border-radius: 10px;
+}
+
+.ingredients-container ul li {
+	padding: 5px;
+	font-weight: bold;
+	cursor: pointer;
+	font-size: 22px;
+}
+
+.ingredients-container ul li:last-child {
+	border-bottom: none;
+}
+
+/* .ingredients-container:hover ul {
+	display: block;
+} */
+/* .display-block {
+	display: block;
+} */
+/* Add this to your CSS file */
+
+.btn-container {
+	display: flex;
+	margin: 5px;
+	justify-content: center;
+}
+@media screen and (max-width: 621px) and (min-width: 400px) {
+	.btn-container {
+		display: flex;
+		margin: 50px; /* Ajusta el margen según sea necesario */
+		justify-content: center;
+	}
+}
+.btn-card-add,
+.btn-card-remove {
+	display: inline-block;
+	padding: 10px 30px;
+	margin: 5px;
+	border: 1px solid #ffffff;
+	border-radius: 5px;
+	text-decoration: none;
+	color: #333;
+	transition: 0.3s, color 0.3s;
+	cursor: pointer;
+}
+
+.btn-card-add {
+	background-color: yellow;
+}
+.btn-card-add:hover {
+	background-color: rgb(171, 171, 110);
+	transform: scale(1.03);
+}
+
+.btn-card-remove {
+	background-color: red;
+}
+
+.btn-card-remove:hover {
+	background-color: rgb(126, 45, 45);
+	transform: scale(1.03);
+}
+
+/* CSS */
+.button-55 {
+	align-self: center;
+	background-color: #fff;
+	background-image: none;
+	background-position: 0 90%;
+	background-repeat: repeat no-repeat;
+	background-size: 4px 3px;
+	border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+	border-style: solid;
+	border-width: 2px;
+	box-shadow: rgba(0, 0, 0, 0.2) 15px 28px 25px -18px;
+	box-sizing: border-box;
+	color: #41403e;
+	cursor: pointer;
+	display: inline-block;
+	font-family: Neucha, sans-serif;
+	font-size: 1rem;
+	line-height: 23px;
+	outline: none;
+	padding: 0.75rem;
+	text-decoration: none;
+	transition: all 235ms ease-in-out;
+
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+}
+
+.button-55:hover {
+	box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px -5px;
+	transform: translate3d(0, 2px, 0);
+}
+
+.button-55:focus {
+	box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
+}
+
+.ingredients-container {
+	position: relative;
+}
+
+.ingredients-dropdown {
+	display: block;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: rgba(
+		5,
+		5,
+		5,
+		0.5
+	); /* rgba con un valor de alfa (0.9) para la transparencia */
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+	padding: 10px;
+}
+
+.ingredients-dropdown-enter {
+	opacity: 0;
+}
+
+.ingredients-dropdown-enter-active {
+	opacity: 1;
+	transition: opacity 0.3s ease;
+}
+
+.ingredients-dropdown-exit {
+	opacity: 1;
+}
+
+.ingredients-dropdown-exit-active {
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+.enlace-atras {
+	font-size: 16px;
+	color: #000000;
+	text-decoration: none;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.enlace-atras:hover {
+	transform: scale(1.05);
+}

@@ -1,0 +1,53 @@
+/* Navbar.css */
+.navbar {
+	background-color: #000000;
+	padding: 5px;
+	display: flex;
+	justify-content: space-between; /* Distribute items along the main axis */
+	align-items: center; /* Center items along the cross axis */
+	width: 100%;
+}
+
+.logo-container {
+	display: flex;
+	align-items: center;
+}
+
+.logo {
+	width: 40px; /* Adjust the width as needed */
+	height: auto;
+	margin-right: auto; /* Add margin to separate logo and links */
+}
+.price-list {
+	display: flex;
+	align-items: center;
+}
+.nav-links {
+	list-style-type: none;
+	margin: 0;
+	padding: 5px;
+	display: flex;
+}
+
+li {
+	margin: 10px; /* Adjust margin between links */
+}
+
+a {
+	text-decoration: none;
+	color: rgb(163, 182, 184);
+}
+
+a:hover {
+	color: rgb(100, 130, 130);
+}
+
+.active {
+	font-weight: bold;
+	color: rgb(255, 255, 255);
+	text-decoration: underline;
+}
+.total-price {
+	color: white;
+	font-size: 12px;
+}
