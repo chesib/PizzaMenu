@@ -28,13 +28,7 @@ const PizzaCard = ({ pizza }) => {
 				<h2>{name}</h2>
 				<ul className="card-ul">
 					{ingredients.map((ingredient, index) => (
-						<li key={index}>
-							<FontAwesomeIcon
-								className="pizza-icon"
-								icon={faPizzaSlice}
-							/>{" "}
-							{ingredient}
-						</li>
+						<li key={index}>{ingredient}</li>
 					))}
 				</ul>
 				<h3>Precio: ${formatPrice(price)}</h3>

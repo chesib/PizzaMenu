@@ -17,6 +17,8 @@
 	width: 40px; /* Adjust the width as needed */
 	height: auto;
 	margin-right: auto; /* Add margin to separate logo and links */
+	margin: 5px;
+	margin-left: 20px;
 }
 .price-list {
 	display: flex;

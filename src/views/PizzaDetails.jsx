@@ -39,15 +39,13 @@ const PizzaDetails = () => {
 					<Link to="/" className="enlace-atras">
 						Atrás <span> 🔙</span>
 					</Link>
-					<h2>{pizza.name}</h2>
+					<h2 className="pizza-name">{pizza.name}</h2>
 					<button
-						className="button-55"
+						className="button-delete"
 						role="button"
 						onClick={handleToggleIngredients}
 					>
-						{showIngredients
-							? "Ocultar Ingredientes"
-							: "Ver Ingredientes"}
+						{showIngredients ? "- Ingredientes" : "+ Ingredientes"}
 					</button>
 
 					<CSSTransition
@@ -69,11 +67,14 @@ const PizzaDetails = () => {
 				</div>
 				<p>Precio: ${formatPrice(pizza.price)}</p>
 				<div className="btn-container">
-					<button className="btn-card-add" onClick={handleToggleCart}>
+					<button
+						className="button-delete"
+						onClick={handleToggleCart}
+					>
 						agregar
 					</button>
 					<button
-						className="btn-card-remove"
+						className="button-delete"
 						onClick={handleRemoveFromCart}
 					>
 						quitar

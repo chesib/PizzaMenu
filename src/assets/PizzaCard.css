@@ -1,12 +1,14 @@
 /* PizzaCard.css */
+@import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap");
 .pizza-container {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(330px, 300px));
 	gap: 20px;
 	padding: 20px;
 	margin: 20px;
 	margin-bottom: 80px;
 	padding-bottom: 40px;
+	justify-content: center;
 }
 
 .pizza-card {
@@ -61,9 +63,10 @@
 }
 
 .pizza-details h2 {
-	font-size: 1.5em;
+	font-size: 1em;
 	text-align: center;
 	text-transform: capitalize;
+	font-family: "Gloria Hallelujah", cursive;
 }
 
 .pizza-details p {
@@ -81,10 +84,12 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	max-height: 100px;
+	overflow: hidden;
 }
 
 .card-ul li {
-	flex-basis: 35%;
+	flex-basis: 30%;
 	box-sizing: border-box;
 	padding: 0px; /* Ajusta según sea necesario */
 	text-transform: capitalize;
@@ -98,16 +103,10 @@ ul:not(:last-child) {
 /* En tu archivo de estilos (por ejemplo, App.css) */
 .btn-container {
 	display: flex;
-	margin: 5px;
+	margin: 3px;
 	justify-content: center;
 }
-@media screen and (max-width: 621px) and (min-width: 400px) {
-	.btn-container {
-		display: flex;
-		margin: 50px; /* Ajusta el margen según sea necesario */
-		justify-content: center;
-	}
-}
+
 .btn-card-add,
 .btn-card-remove {
 	display: inline-block;
