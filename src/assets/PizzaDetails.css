@@ -76,7 +76,6 @@
 	top: 100%;
 	left: 64%;
 
-	display: none;
 	border-radius: 10px;
 }
 
@@ -91,9 +90,10 @@
 	border-bottom: none;
 }
 
-/* .ingredients-container:hover ul {
+.ingredients-container:hover ul {
 	display: block;
-} */
+}
+
 /* .display-block {
 	display: block;
 } */
@@ -200,6 +200,9 @@
 
 .ingredients-dropdown-enter {
 	opacity: 0;
+}
+.ingredients-dropdown-enter-done {
+	display: block;
 }
 
 .ingredients-dropdown-enter-active {
