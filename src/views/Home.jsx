@@ -43,15 +43,22 @@ const Home = () => {
 		<div>
 			<Header />
 			<div className="pizza-container">
-				{pizzaData.map((pizza) => (
-					<div
-						key={pizza.id}
-						onClick={() => handleCardClick(pizza.id)}
-					>
-						{/* Use onClick to call handleCardClick */}
-						<PizzaCard pizza={pizza} />
-					</div>
-				))}
+				{error ? (
+					<p>
+						Error al cargar los datos. Por favor, intenta de nuevo
+						más tarde.
+					</p>
+				) : (
+					pizzaData.map((pizza) => (
+						<div
+							key={pizza.id}
+							onClick={() => handleCardClick(pizza.id)}
+						>
+							{/* Use onClick to call handleCardClick */}
+							<PizzaCard pizza={pizza} />
+						</div>
+					))
+				)}
 			</div>
 		</div>
 	);

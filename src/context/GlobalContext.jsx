@@ -31,7 +31,7 @@ const GlobalProvider = ({ children }) => {
 					total: existingItem.total + pizza.price,
 				},
 			}));
-			toast.success("Agregaste una pizza a tu carrito");
+			toast.success(`Agregaste una pizza ${pizza.name} tu carrito`);
 		} else {
 			setCart((prevCart) => ({
 				...prevCart,
@@ -44,7 +44,7 @@ const GlobalProvider = ({ children }) => {
 					amount: 1,
 				},
 			}));
-			toast.success("Agregaste una pizza a tu carrito");
+			toast.success(`Agregaste una pizza ${pizza.name} tu carrito`);
 		}
 	};
 
@@ -59,7 +59,7 @@ const GlobalProvider = ({ children }) => {
 				if (existingItem.amount === 1) {
 					// If it's the last pizza, remove it from the cart
 					delete updatedCart[pizza.id];
-					toast.warn("Quitaste una pizza de tu carrito");
+					toast.warn(`Quitaste una pizza ${pizza.name} tu carrito`);
 				} else {
 					// Otherwise, decrement the amount and update the total
 					updatedCart[pizza.id] = {
@@ -67,7 +67,7 @@ const GlobalProvider = ({ children }) => {
 						amount: existingItem.amount - 1,
 						total: existingItem.total - pizza.price,
 					};
-					toast.warn("Quitaste una pizza de tu carrito");
+					toast.warn(`Quitaste una pizza ${pizza.name} tu carrito`);
 				}
 
 				return updatedCart;
