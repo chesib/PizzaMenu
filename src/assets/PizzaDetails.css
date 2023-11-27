@@ -81,13 +81,7 @@
 	margin: 5px;
 	justify-content: center;
 }
-@media screen and (max-width: 621px) and (min-width: 400px) {
-	.btn-container {
-		display: flex;
-		margin: 50px; /* Ajusta el margen según sea necesario */
-		justify-content: center;
-	}
-}
+
 .btn-card-add,
 .btn-card-remove {
 	display: inline-block;

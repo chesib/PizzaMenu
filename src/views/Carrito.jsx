@@ -51,7 +51,7 @@ const Carrito = () => {
 													toggleCart(pizza)
 												}
 											>
-												Agregar
+												+
 											</button>
 											<button
 												className="button-delete"
@@ -59,7 +59,7 @@ const Carrito = () => {
 													removeOneFromCart(pizza)
 												}
 											>
-												Quitar
+												-
 											</button>
 										</div>
 									</div>
